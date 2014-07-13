@@ -21,7 +21,4 @@ EXPOSE 9000
 
 ADD profile /profile
 
-# Define mountable directories.
-VOLUME ["/var/home"]
-
 CMD ["/bin/bash", "--rcfile", "/profile", "-i"]
